@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo-principal">Algum titulo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quasi odit modi ex sint illum omnis excepturi, quo asperiores praesentium!</p>
+    </div>
+    <div>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <div>
+            <footer>Rodape</footer>
+            <a href="#">Link</a>
+        </div>
+    </div>
+</body>
+
+<script>
+    console.log(document.body.childNodes[1])
+    console.log(document.getElementsByTagName('li'))
+    console.log(document.getElementById('titulo-principal'))
+    console.log(document.getElementById('titulo-principal').innerHTML)
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="titulo">Titulo principal</h1>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, aut?</p>
+    </div>
+    <div>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+    </div>
+</body>
+
+<script>
+
+    //inserindo um paragrafo acima do titulo
+    let novoElemento = document.createElement("p")
+    let elementoAlvo = document.querySelector("#titulo")
+    let elementoPai = document.querySelector("#container")
+
+    elementoPai.insertBefore(novoElemento,elementoAlvo)
+
+    novoElemento.innerHTML = "paragrafo adicionado com JS"
+</script>
+</html>

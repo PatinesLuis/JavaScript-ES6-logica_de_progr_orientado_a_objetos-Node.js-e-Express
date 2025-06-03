@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Titulo principal</h1>
+    </div>
+    
+</body>
+<script>
+    let novoElemento = document.createElement("p")
+    let texto = document.createTextNode("trocando o h1 por um paragrafo");
+    novoElemento.appendChild(texto)
+
+    //trocando o titulo por um parafrago
+    let heading = document.querySelector("#titulo")
+
+    //pegando o elemento pai do titulo (div)
+    let paiHeading = heading.parentNode
+
+    paiHeading.replaceChild(novoElemento, heading)
+    console.log(paiHeading)
+</script>
+</html>
